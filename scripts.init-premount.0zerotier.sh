@@ -33,6 +33,6 @@ mknod /dev/net/tun c 10 200
 /sbin/ifconfig lo 127.0.0.1
 
 # run zerotier-one
-${ZT_APP} &> /var/log/zerotier.log &
+${ZT_APP} &
 
 echo $! >/run/zerotier-one.pid

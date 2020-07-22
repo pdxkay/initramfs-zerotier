@@ -9,7 +9,7 @@ If you would like to reproduce my results, these scripts may help you.
 * Install dropbear ssh and configure initramfs function
 * Install zerotier to your machine, configure it as you'd like and join networks or what have you (these scripts simply copy the running execs and configuration. You may clone your configuration and change the scripts to copy from your alternate configuration if you wish. I may do this in the future to join a separate staging zerotier network.)
 * Download or clone this repo
-* # install.sh (or copy the scripts yourself...)
+* \# install.sh (or copy the scripts yourself...)
 
 # How this works:
 Rather simple, dropbear configuration means you will have networking on your initramfs. We go a step further and load the tun module and zerotier files into initramfs. When booting, zerotier will run before dropbear, setting up a local loopback device (required for zerotier) and create the tunnel device. Zerotier will run then dropbear will run and presto, you are now connected to the zerotier network.

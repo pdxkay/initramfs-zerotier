@@ -15,4 +15,4 @@ If you would like to reproduce my results, these scripts may help you.
 Rather simple, dropbear configuration means you will have networking on your initramfs. We go a step further and load the tun module and zerotier files into initramfs. When booting, zerotier will run before dropbear, setting up a local loopback device (required for zerotier) and create the tunnel device. Zerotier will run then dropbear will run and presto, you are now connected to the zerotier network.
 
 # OS Support:
-I have tested this on Debian 10. I do not know how other distrobutions do their initramfs configuration. Either way, feel free to submit improvments or fork for your distro
+I have tested this on Debian 10. I do not know how other distributions do their initramfs configuration. Either way, feel free to submit improvments or fork for your distro
